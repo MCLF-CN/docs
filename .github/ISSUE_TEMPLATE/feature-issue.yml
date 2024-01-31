@@ -9,7 +9,10 @@ body:
     description: "请逐个检查下列项目，并勾选确认。"
     options:
     - label: "我充分理解提交的建议可能无法所有启动器作者参与，并尊重所有启动器开发者的选择"
+      required: true
     - label: "我确认在Issues列表中并无其他人已经提出过与此问题相同或相似的问题"
+      required: true
+    - label: "我确认该反馈并非针对单个启动器的，如果是，我将会去该启动器的反馈页面反馈"
       required: true
 - type: dropdown
   id: "user-type"
@@ -17,10 +20,10 @@ body:
     label: "您是什么类型的用户"
     description: "请认真填写该选项"
     options:
-    - 启动器作者
-    - 第三方网站管理/负责人
-    - 服务器管理
     - 普通用户
+    - 启动器作者
+    - 第三方网站管理/负责人（MC相关的）
+    - 服务器管理
     - 其他
   validations:
     required: true
@@ -28,6 +31,7 @@ body:
   id: "content"
   attributes:
     label: 请简单的说一下您的想法
+    description: "So，我们需要做一些什么呢？"
     placeholder: "-（请在这里回答）-"
   validations:
     required: true
@@ -58,4 +62,4 @@ body:
   id: "yml-8"
   attributes:
     label: 附注
-    placeholder: "-（请在这里回答）-"
+    placeholder: "-（请在这里回答，若没有可留空）-"
