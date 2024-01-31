@@ -15,7 +15,7 @@ body:
   id: "user-type"
   attributes:
     label: "您是什么类型的用户"
-    description: ""
+    description: "请认真填写该选项"
     options:
     - 启动器作者
     - 第三方网站管理/负责人
